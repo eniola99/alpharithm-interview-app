@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import FeatherIcon from "feather-icons-react";
 
 import { useWindowSize, useOutsideClick } from "@/hooks";
 
@@ -53,11 +52,20 @@ export const NavBar = () => {
         </div>
         {width < 769 && (
           <div style={{ position: "absolute", right: "20px" }}>
-            <FeatherIcon
+            <Image
+              className="bg-white"
+              src="/hambuger.png"
+              width={30}
+              height={30}
+              alt="menu"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+
+            {/* <FeatherIcon
               icon="align-left"
               size={35}
               onClick={() => setIsOpen(!isOpen)}
-            />
+            /> */}
           </div>
         )}
       </div>
