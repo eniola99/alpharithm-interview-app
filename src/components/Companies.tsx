@@ -28,7 +28,12 @@ export const Companies = () => {
         {companies.map((item, index) => (
           <>
             <div className="mt-5" key={index}>
-              <Image src={`/${item}`} alt="Image" height={48} width={150} />
+              <Image
+                src={`/${item}`}
+                alt="Image"
+                height={width < 769 ? 30 : 48}
+                width={width < 769 ? 100 : 150}
+              />
             </div>
           </>
         ))}

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { AlignJustify } from "lucide-react";
 
 import { useWindowSize, useOutsideClick } from "@/hooks";
 
@@ -51,21 +52,12 @@ export const NavBar = () => {
           </div>
         </div>
         {width < 769 && (
-          <div style={{ position: "absolute", right: "20px" }}>
-            <Image
-              className="bg-white"
-              src="/hambuger.png"
-              width={30}
-              height={30}
-              alt="menu"
+          <div style={{ position: "absolute", right: "30px" }}>
+            <AlignJustify
+              color="white"
+              size={30}
               onClick={() => setIsOpen(!isOpen)}
             />
-
-            {/* <FeatherIcon
-              icon="align-left"
-              size={35}
-              onClick={() => setIsOpen(!isOpen)}
-            /> */}
           </div>
         )}
       </div>

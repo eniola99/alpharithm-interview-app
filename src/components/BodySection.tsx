@@ -1,4 +1,5 @@
 import React from "react";
+
 import { NavigationTabs } from "./NavigationTabs";
 
 export const BodySection = () => {

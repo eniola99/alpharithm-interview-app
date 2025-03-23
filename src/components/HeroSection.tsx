@@ -23,17 +23,17 @@ export const HeroSection = () => {
             <div className="sub__text">
               <span className="">Leverage on Automation</span>
             </div>
-            <div className="large__text mt-5">
+            <div className="large__text text-white mt-5">
               <span className="">AI Models for Business Solutions </span>
             </div>
             <div className="paragraph__text mt-4 mb-3">
-              <span className="">
+              <span className="text-white">
                 Leverage the power of AI to automate, analyze, and optimize your
                 workflows. Our specialized models are designed to fit different
                 business needs
               </span>
             </div>
-            <div className="action__button mt-3 p-4">
+            <div className="action__button mt-3 p-3">
               <span role="button" className="text-dark">
                 Get Started Now
               </span>
