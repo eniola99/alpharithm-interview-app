@@ -195,6 +195,7 @@ a {
   position: relative;
   width: 100%;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .navigation {
